@@ -17,8 +17,8 @@ A simple login system using Node.js, Express, MySQL, and bcrypt for password has
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/simple-login.git
-   cd simple-login
+   git clone https://github.com/yourusername/nodejs.git
+   cd nodejs
    ```
 
 2. **Install dependencies:**
