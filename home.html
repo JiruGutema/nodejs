@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5;
+      }
+
+      header {
+        background-color: #4267b2;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .welcome {
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #4267b2;
+        color: white;
+        position: fixed;
+        width: 60%;
+        bottom: 0;
+      }
+      .container {
+        width: 60%;
+        margin: auto;
+      }
+      .logo {
+        background-image: url(./logo.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 150px;
+      }
+      .logo-container {
+        width: 100%;
+        background-color: #4267b2;
+      }
+      ul {
+        border: 2px green solid;
+        width: 400px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="logo-container"><div class="logo"></div></div>
+      <hr />
+      <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <nav>
+          <ul>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="welcome">
+          <h2>Hello, [Username]!</h2>
+          <p>You are logged in. Explore your options above.</p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+      </footer>
+    </section>
+  </body>
+</html>

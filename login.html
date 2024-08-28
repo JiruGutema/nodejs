@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faceboook Login</title>
+    <link rel="stylesheet" href="./css.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(223, 229, 223);
+      }
+
+      main {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      header {
+        font-size: 80px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        color: rgb(19, 116, 213);
+        margin: 30px;
+        margin-bottom: 0;
+      }
+
+      .intro {
+        font-size: 25px;
+        margin-top: 0;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+      }
+
+      .login-field {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px rgb(168, 171, 168);
+      }
+
+      .userInput {
+        width: 90%;
+        height: 60px;
+        margin-top: 20px;
+        border-radius: 6px;
+        border: 2px solid rgb(234, 233, 228);
+        font-size: 25px;
+        padding-left: 15px;
+      }
+      .userInput:hover {
+        border: solid dodgerblue 2px;
+      }
+
+      .submitButton {
+        width: 93%;
+        height: 60px;
+        margin: 20px 0;
+        background-color: rgb(10, 116, 221);
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+      }
+
+      #forgettenPassword {
+        font-size: 25px;
+        margin-top: 0;
+      }
+
+      a {
+        font-size: 20px;
+        color: rgb(15, 106, 196);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .createNewAccount {
+        width: 60%;
+        height: 60px;
+        margin: 30px 0;
+        background-color: rgb(55, 192, 17);
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      #show {
+        width: 20px;
+      }
+      #userPassword {
+        width: 90%;
+      }
+
+      .login-field > div {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+      }
+      hr {
+        border: solid 1px rgb(231, 227, 227);
+        width: 90%;
+      }
+      .createNewAccount:hover {
+        cursor: pointer;
+        opacity: 80%;
+      }
+      .submitButton:hover {
+        cursor: pointer;
+        opacity: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>facebook</header>
+      <p class="intro">
+        Facebook helps you connect and share with the people in your life.
+      </p>
+      <section class="login-field">
+        <form action="/login" method="POST">
+          <input
+            type="text"
+            name="username"
+            id="userEmail"
+            placeholder="Email address or phone number"
+            class="userInput"
+          />
+          <br />
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="userPassword"
+              placeholder="Password"
+              class="userInput"
+            />
+          </div>
+          <br />
+          <button type="submit" class="submitButton">Log in</button>
+        </form>
+        <p id="forget">
+          <a href="http://localhost:3000/forget">Forgotten password?</a>
+        </p>
+        <hr />
+        <button type="submit" class="createNewAccount">
+          Create new account
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
